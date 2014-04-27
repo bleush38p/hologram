@@ -2,11 +2,7 @@
 
 @font-face {
     font-family: Minecraft;
-    src: url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.eot'); /* IE9 Compat Modes */
-    src: url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.eot?#iefix') format('embedded-opentype'), 
-        url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.woff') format('woff'),
-        url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.ttf')  format('truetype'), 
-        url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('fonts/mfont.eot');
 }
 
 body {
