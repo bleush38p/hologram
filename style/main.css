@@ -1,0 +1,168 @@
+/* I'm stealing the fonts from summon-helper, which is an awesome tool. Go check it out at http://summon-helper.bplaced.net/ */
+
+@font-face {
+    font-family: Minecraft;
+    src: url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.eot'); /* IE9 Compat Modes */
+    src: url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.eot?#iefix') format('embedded-opentype'), 
+        url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.woff') format('woff'),
+        url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.ttf')  format('truetype'), 
+        url('http://summon-helper.bplaced.net/styles/fonts/Minecraft_font.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: minecraft, monospace;
+    background-image: url(image/tile1.png);
+    color: #e3e3e3;
+    overflow: hidden;
+}
+
+#controls {
+    position: absolute;
+    left: 0;
+    bottom: -117px  ;
+    width: 100%;
+    border-top: 3px solid #727272;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+a {color: #73a1d6;}
+a:hover {color: #498bd6;}
+a:visited {color: #8a73d6;}
+a:visited:hover {color: #6d4dd4;}
+
+button, select {
+    height: 20px;
+    background-image: url(image/buttontile.png);
+    background-repeat: repeat-x;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    font-family: minecraft, monospace;
+    -webkit-appearance: none;
+    margin-left: -3px;
+    line-height: 14px
+}
+select {
+    padding: 0 0 1px 5px;
+    width: 90px;
+}
+button:hover, select:hover {
+    background-image: url(image/buttonactivetile.png);
+}
+.precontrol {
+    background-image: url(image/buttonleft.png);
+    height: 20px;
+    width: 2px;
+    display: inline-block;
+}
+.postcontrol {
+    background-image: url(image/buttonright.png);
+    height: 20px;
+    width: 2px;
+    margin-left: -5px;
+    display: inline-block;
+}
+
+#handle {
+    border-bottom: 20px solid #727272;
+    border-right: 20px solid rgba(255, 255, 255, 0);
+    width: 24px;
+    position: relative;
+    left: 0;
+    bottom: 24px;
+    line-height: 0px;
+}
+
+.tab-handle {
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #393939;
+    height: 0;
+    position: relative;
+}
+
+.h1_ {top: 6px;left: 2px;width: 20px;}
+.h2_ {width: 27px;top: 5px;}
+.h3_ {width: 34px;top: 5px;}
+
+#control-container {
+    position: relative;
+    top: -15px;
+    left: 10px;   
+}
+
+/*//  TEXT INPUT  //*/
+
+#basic-container {
+    align-content: center;
+    text-align: center;
+}
+
+
+#basicentry {
+    margin: 20px auto;
+    text-align: center;
+    font-family: minecraft, monospace;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    max-height: 600px;
+    font-size: 14px;
+    background-color: #CCC;
+    border: none;
+    color: #FFF;
+}
+
+/*// COLOR EDITING //*/
+
+#edit-container {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: minecraft, monospace;
+    text-align: center;
+}
+.row {
+    cursor: crosshair;
+    background-color: #CCC;
+    text-align: center;
+    height: 20px;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.black       {color:#000;} /*0*/
+.darkBlue    {color:#00A;} /*1*/
+.darkGreen   {color:#0A0;} /*2*/
+.darkAqua    {color:#0AA;} /*3*/
+.darkRed     {color:#A00;} /*4*/
+.darkPurple  {color:#A0A;} /*5*/
+.gold        {color:#FA0;} /*6*/
+.gray        {color:#AAA;} /*7*/
+.darkGray    {color:#555;} /*8*/
+.blue        {color:#55F;} /*9*/
+.green       {color:#5F5;} /*a*/
+.aqua        {color:#5FF;} /*b*/
+.red         {color:#F55;} /*c*/
+.lightPurple {color:#F5F;} /*d*/
+.yellow      {color:#FF5;} /*e*/
+.white       {color:#FFF;} /*f*/
+
+/*// OUTPUT //*/
+
+#output {
+    margin: 20px auto;
+    text-align: center;
+    font-family: monospace;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    max-height: 600px;
+    font-size: 14px;
+    background-color: #CCC;
+    border: none;
+    color: #000;
+}

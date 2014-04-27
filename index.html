@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>TBHC for asdjke's hologram filter</title>
+        <link rel="stylesheet" type="text/css" href="style/main.css" />
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="basic-container">
+            <textarea id="basicentry" spellcheck=false placeholder="Enter the contents of your hologram here!"></textarea>
+        </div>
+        <div id="edit-container">
+            
+        </div>
+        <textarea id="output" spellcheck=false disabled></textarea>
+        <div id="controls"><div id="handle"><div class="tab-handle h1_"><div class="tab-handle h2_"><div class="tab-handle h3_"></div></div></div></div>
+            <div id="control-container">
+                <div class="precontrol" id="toColoringpre">&nbsp;</div>
+                <button id="toColoring">Load Coloring Area</button>
+                <div class="postcontrol" id="toColoringpost">&nbsp;</div>
+                Paint with:
+                <div class="precontrol" id="colorSelectorpre">&nbsp;</div>
+                <select id="colorSelector">
+                    <option>black</option>
+                    <option>darkBlue</option>
+                    <option>darkGreen</option>
+                    <option>darkAqua</option>
+                    <option>darkRed</option>
+                    <option>darkPurple</option>
+                    <option>gold</option>
+                    <option>gray</option>
+                    <option>darkGray</option>
+                    <option>blue</option>
+                    <option>green</option>
+                    <option>aqua</option>
+                    <option>red</option>
+                    <option>lightPurple</option>
+                    <option>yellow</option>
+                    <option selected>white</option>
+                </select>
+                <div class="postcontrol" id="colorSelectorpost">&nbsp;</div>
+                <div class="precontrol" id="toOutputpre">&nbsp;</div>
+                <button id="toOutput">Load Output</button>
+                <div class="postcontrol" id="toOutputpost">&nbsp;</div>
+                <div class="precontrol" id="showHelppre">&nbsp;</div>
+                <button id="showHelp">Add Frame</button>
+                <div class="postcontrol" id="showHelppost">&nbsp;</div>
+                <br/><br/>
+                Adding New Frames:<br/>
+                Support hasn't been added yet for multiple frames. However, they're easy to do:<br/>
+                Step 1: Draw your first frame, using this tool.<br/>
+                Step 2: Copy the output into a plain-text editor, like <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a>, TextEdit, or <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>.<br/>
+                Step 3: Add the text "^nf" to the end of your text, meaning new frame.<br/>
+                Step 4: Repeat for each frame, continually pasting the output after the existing text and adding "^nf" for each new frame.
+            </div>
+        </div>
+    </body>
+</html>
